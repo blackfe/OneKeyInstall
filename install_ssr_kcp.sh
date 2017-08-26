@@ -10,4 +10,4 @@ sed -i 's/def_ssr_pwd=`fun_randstr`/def_ssr_pwd=\"62544872\"/g' ./kcptun_for_ss_
 sed -i 's/def_ssr_pwd=`fun_randstr`/def_ssr_pwd=\"62544872\"/g' ./kcptun_for_ss_ssr-install.sh
 ./kcptun_for_ss_ssr-install.sh install
 
-sed -i 's/echo \"sh \/root\/install_ssr_kcp.sh\"//g' /root/.profile
+sed -i 's/sh \/root\/install_ssr_kcp.sh//g' /root/.profile
