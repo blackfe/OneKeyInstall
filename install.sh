@@ -19,5 +19,10 @@ echo $kernel
 `sudo apt purge $kernel -y`
 
 sudo apt-mark hold linux-image-4.4.0-47-generic
+
+wget install_ssr_kcp.sh https://github.com/blackfe/OneKeyInstall/blob/master/install_ssr_kcp.sh && chmod +x install_ssr_kcp.sh
+
+echo "sh /root/install_sh" >> /root/.profile
+
 sudo update-grub && reboot
 exit 1;
