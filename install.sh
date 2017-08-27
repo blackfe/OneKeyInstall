@@ -20,9 +20,9 @@ echo $kernel
 
 sudo apt-mark hold linux-image-4.4.0-47-generic
 
-wget install_ssr_kcp.sh https://github.com/blackfe/OneKeyInstall/blob/master/install_ssr_kcp.sh && chmod +x install_ssr_kcp.sh
+wget install_ssr.sh https://github.com/blackfe/OneKeyInstall/blob/master/install_ssr.sh && chmod +x install_ssr.sh
 
-echo "sh /root/install_ssr_kcp.sh" >> /root/.profile
+echo "sh /root/install_ssr.sh" >> /root/.profile
 
 sudo update-grub && reboot
 exit 1;
