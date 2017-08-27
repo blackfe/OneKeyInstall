@@ -21,6 +21,6 @@ echo $kernel
 sudo apt-mark hold linux-image-4.4.0-47-generic
 
 echo "sh /root/install_ssr.sh" >> /root/.profile
-
+chmod +x /root/install_ssr.sh
 sudo update-grub && reboot
 exit 1;

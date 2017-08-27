@@ -7,3 +7,5 @@ chmod +x shadowsocksR.sh
 ./shadowsocksR.sh 2>&1 | tee shadowsocksR.log
 
 sed -i 's/sh \/root\/install_ssr.sh//g' /root/.profile
+chmod +x install_tools.sh
+sh install_tools.sh
