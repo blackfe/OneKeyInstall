@@ -20,8 +20,6 @@ echo $kernel
 
 sudo apt-mark hold linux-image-4.4.0-47-generic
 
-wget install_ssr.sh https://github.com/blackfe/OneKeyInstall/blob/master/install_ssr.sh && chmod +x install_ssr.sh
-
 echo "sh /root/install_ssr.sh" >> /root/.profile
 
 sudo update-grub && reboot
