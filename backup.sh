@@ -10,6 +10,9 @@ backup_files="/etc"
 
 # Where to backup to.
 dest="/mnt/backup"
+if [ ! -d $dest]; then
+    mkdir $dest
+fi
 
 # Create archive filename.
 day=$(date +%F_%H_%M_%S)
@@ -34,7 +37,7 @@ ls -lh $dest
 old_path=`pwd`
 cd $dest
 
-python $old_path/backup-and-restore-example.py  --mode Backup --filename $archive_file
+python3 $old_path/backup-and-restore-example.py  --mode Backup --filename $archive_file
 
 
 rm /mnt/backup/* -rf
