@@ -1,6 +1,6 @@
 #!/bin/bash
 #apt-get install docker docker.io -y
-apt-get install libxml2-dev libxslt1-dev build-essential chrpath libxft-dev libssl-dev libffi-dev libreadline6 libreadline6-dev -y
+apt-get install libcurl4-openssl-dev libxml2-dev libxslt1-dev build-essential chrpath libxft-dev libssl-dev libffi-dev libreadline6 libreadline6-dev -y
 apt-get install libmysqlclient-dev mysql-server -y
 apt-get install global ctags w3m xsel aspell emacs -y
 apt-get install curl git automake -y
@@ -17,7 +17,6 @@ cd ~/
 source ~/.bashrc
 cd $curr_dir
 sh install_py.sh 
-#pip3 install requests==2.17.1
 
 #################################
 # backup
