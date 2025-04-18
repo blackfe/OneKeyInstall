@@ -30,6 +30,11 @@ sh install_py.sh
 ##############################
 #iptables-restore /root/iptables.rule.1
 
+################################
+# firewall
+##############################
+#iptables-restore /root/iptables.rule.1
+
 
 cd ~; git clone https://github.com/redguardtoo/emacs.d.git .emacs.d; cd .emacs.d; git reset --hard stable
 
